@@ -1,0 +1,50 @@
+keytool -genkey -v -keystore pkm.keystore -alias perfectKey -keyalg RSA -keysize 2048 -validity 10000
+
+password: Pkm1234
+What is your first and last name?
+  [Unknown]:  Nhi Ha
+What is the name of your organizational unit?
+  [Unknown]:  Nhi Ha
+What is the name of your organization?
+  [Unknown]:  Nhi Ha
+What is the name of your City or Locality?
+  [Unknown]:  HaNoi 
+What is the name of your State or Province?
+  [Unknown]:  HaNoi
+What is the two-letter country code for this unit?
+  [Unknown]:  VN
+Is CN=Nhi Ha, OU=Nhi Ha, O=Nhi Ha, L=HaNoi, ST=HaNoi, C=VN correct?
+  [no]:  yes
+
+Check android/app/build.gradle
+
+...
+android {
+    ...
+    defaultConfig { ... }
+      signingConfigs {
+          release {
+              if (project.hasProperty('MYAPP_UPLOAD_STORE_FILE')) {
+                  storeFile file(MYAPP_UPLOAD_STORE_FILE)
+                  storePassword Pkm1234
+                  keyAlias perfectKey
+                  keyPassword Pkm1234
+              }
+          }
+      }
+    buildTypes {
+        release {
+            ...
+            signingConfig signingConfigs.release
+        }
+    }
+}
+...
+
+create assets
+
+react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/
+react-native bundle --entry-file index.js --platform ios --dev false --bundle-output ios/main.jsbundle --assets-dest ios
+
+cd android
+./gradlew bundleRelease

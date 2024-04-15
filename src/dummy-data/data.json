@@ -1,0 +1,136 @@
+[
+    {
+        "ID": 1,
+        "Parent": 0,
+        "Ten": "Goods"
+    },
+    {
+        "ID": 2,
+        "Parent": 1,
+        "Ten": "Mini Bar"
+    },
+    {
+        "ID": 3,
+        "Parent": 1,
+        "Ten": "THE BLACK OAK LOUNGE"
+    },
+    {
+        "ID": 10,
+        "Parent": 1,
+        "Ten": "EVENTS"
+    },
+    {
+        "ID": 11,
+        "Parent": 1,
+        "Ten": "MUN DINING"
+    },
+    {
+        "ID": 12,
+        "Parent": 1,
+        "Ten": "RESTAURANT 3"
+    },
+    {
+        "ID": 13,
+        "Parent": 1,
+        "Ten": "KARAOKE"
+    },
+    {
+        "ID": 14,
+        "Parent": 1,
+        "Ten": "CHANVRE SPA"
+    },
+    {
+        "ID": 4,
+        "Parent": 3,
+        "Ten": "Food"
+    },
+    {
+        "ID": 5,
+        "Parent": 3,
+        "Ten": "Beverage"
+    },
+    {
+        "ID": 6,
+        "Parent": 3,
+        "Ten": "Miscellaneous"
+    },
+    {
+        "ID": 7,
+        "Parent": 3,
+        "Ten": "Open Food"
+    },
+    {
+        "ID": 8,
+        "Parent": 3,
+        "Ten": "Open Beverage"
+    },
+    {
+        "ID": 9,
+        "Parent": 3,
+        "Ten": "Open Miscellaneous"
+    },
+    {
+        "ID": 21,
+        "Parent": 5,
+        "Ten": "Smoothies"
+    },
+    {
+        "ID": 22,
+        "Parent": 5,
+        "Ten": "Coffee"
+    },
+    {
+        "ID": 24,
+        "Parent": 5,
+        "Ten": "Nước ép"
+    },
+    {
+        "ID": 25,
+        "Parent": 5,
+        "Ten": "Tea & Soda"
+    },
+    {
+        "ID": 26,
+        "Parent": 5,
+        "Ten": "Soft Drink"
+    },
+    {
+        "ID": 27,
+        "Parent": 5,
+        "Ten": "Beer"
+    },
+    {
+        "ID": 15,
+        "Parent": 11,
+        "Ten": "Food"
+    },
+    {
+        "ID": 16,
+        "Parent": 11,
+        "Ten": "Beverage"
+    },
+    {
+        "ID": 17,
+        "Parent": 11,
+        "Ten": "Miscellaneous"
+    },
+    {
+        "ID": 18,
+        "Parent": 11,
+        "Ten": "Open Food"
+    },
+    {
+        "ID": 19,
+        "Parent": 11,
+        "Ten": "Open Beverage"
+    },
+    {
+        "ID": 20,
+        "Parent": 11,
+        "Ten": "Open Miscellaneous"
+    },
+    {
+        "ID": 23,
+        "Parent": 23,
+        "Ten": "Smoothies"
+        }]
