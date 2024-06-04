@@ -42,6 +42,38 @@ export const PayScreen: React.FC = ({ route }) => {
                 }}
             />
             <View style={{ paddingTop: 10 }}>
+                <View style={{ flexDirection: 'row', marginBottom: 10 }}>
+                    <Text
+                        style={{
+                            opacity: 0.45,
+                            color: '#000000',
+                            fontSize: 12,
+                            fontStyle: 'italic',
+                            paddingLeft: 20,
+                            width: 200,
+                        }}>
+                        Tên món
+                    </Text>
+                    <Text
+                        style={{
+                            opacity: 0.45,
+                            color: '#000000',
+                            fontSize: 12,
+                            fontStyle: 'italic',
+                            width: 120,
+                        }}>
+                        SL
+                    </Text>
+                    <Text
+                        style={{
+                            opacity: 0.45,
+                            color: '#000000',
+                            fontSize: 12,
+                            fontStyle: 'italic',
+                        }}>
+                        TT
+                    </Text>
+                </View>
                 {confirmedComponents.map(
                     (item: {
                         name:
@@ -79,7 +111,7 @@ export const PayScreen: React.FC = ({ route }) => {
                                     fontWeight: 'bold',
                                     fontSize: 16,
                                     paddingLeft: 20,
-                                    width: 180,
+                                    width: 200,
                                     paddingVertical: 8,
                                 }}>
                                 {item.name}
@@ -87,7 +119,7 @@ export const PayScreen: React.FC = ({ route }) => {
                             <Text
                                 style={{
                                     fontSize: 16,
-                                    width: 70,
+                                    width: 120,
                                     paddingVertical: 8,
                                 }}>
                                 {item.count}
@@ -117,7 +149,7 @@ export const PayScreen: React.FC = ({ route }) => {
                         flexDirection: 'row',
                         paddingBottom: 10,
                         paddingTop: 10,
-                        right: -150,
+                        right: -225,
                     }}>
                     <Text style={{ fontWeight: 'bold' }}>Total: </Text>
                     <Text style={{ fontStyle: 'italic', marginLeft: 50 }}>
@@ -132,7 +164,7 @@ export const PayScreen: React.FC = ({ route }) => {
                         gap: 10,
                         borderRadius: 100,
                         marginLeft: 10,
-                        width: 342,
+                        width: 390,
                         height: 39,
                     }}
                     activeOpacity={0.7}

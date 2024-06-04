@@ -32,6 +32,7 @@ export const initialState: OrderState = {
             price: 0,
             nutrition: 0,
             orderImg: undefined,
+            Nhomhang: 0,
         },
     },
     orders: [],

@@ -111,7 +111,7 @@ const ProductOrderItem: React.FC<Props> = (props: Props) => {
                 borderWidth: 1,
                 borderColor: selected ? '#1890FF' : 'rgba(0, 0, 0, 0.25)',
                 borderRadius: 10,
-                width: 341,
+                width: 390,
             }}>
             <TouchableOpacity
                 style={{ position: 'absolute', top: 5, right: 5 }}
@@ -172,7 +172,7 @@ const ProductOrderItem: React.FC<Props> = (props: Props) => {
                             style={{
                                 flexDirection: 'row',
                                 marginTop: -15,
-                                paddingLeft: 10,
+                                paddingLeft: 25,
                             }}>
                             <Icon
                                 type="antdesign"

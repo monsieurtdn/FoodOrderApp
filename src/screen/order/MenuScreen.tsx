@@ -19,7 +19,7 @@ export const MenuScreen = () => {
         const subscription = OrderServiceApi.getProductList(1).subscribe(
             response => {
                 // Handle the successful response here
-                setData(response);
+                setData(response.dishes);
             },
             error => {
                 // Handle errors here
@@ -40,13 +40,13 @@ export const MenuScreen = () => {
             dispatch(
                 // addListProduct(Products[`${data.name}`])
                 addListProduct({
-                    name: item.Ten,
+                    name: item.Name,
                     data: {
                         itemImg: require('../../../image/MaharajaMac1.png'),
                         price: item.Price,
                         nutrition: item.Nutrition,
                         orderImg: require('../../../image/MaharajaMac2.png'),
-                        Nhomhang: item.NhomHang,
+                        Nhomhang: item.CategoryID,
                     },
                 }),
             );

@@ -17,13 +17,12 @@ export const TableData: React.FC = () => {
         { key: 'second', title: 'Floor 2' },
     ]);
     const [data, setData] = useState<any[]>([]);
-    const [legendFloor1, setLegendFloor1] = useState<any[]>([]);
-    const [floor2, setFloor2] = useState<any[]>([]);
+    const [floor, setFloor] = useState<any[]>([]);
     useEffect(() => {
         const subscription = OrderServiceApi.getTablesMap(1).subscribe(
             response => {
                 // Handle the successful response here
-                setData(response);
+                setData(response.tables);
             },
             error => {
                 // Handle errors here
@@ -37,20 +36,16 @@ export const TableData: React.FC = () => {
         };
     }, []);
     useEffect(() => {
-        setLegendFloor1(
-            data.filter(item => item.BlockName === 'LEGEND FLOOR 1'),
-        );
-        setFloor2(data.filter(item => item.BlockName === 'FLOOR 2'));
+        setFloor(data);
     }, [data]);
 
     useEffect(() => {
-        console.log('Legend Floor 1:', legendFloor1);
-        console.log('Floor 2:', floor2);
-    }, [legendFloor1, floor2]);
+        console.log('Floor:', floor);
+    }, [floor]);
 
     const renderScene = SceneMap({
-        first: () => <FloorData data={legendFloor1} />,
-        second: () => <FloorData data={floor2} />,
+        first: () => <FloorData data={floor} />,
+        second: () => <FloorData data={floor} />,
     });
     return (
         <View style={styles.container}>

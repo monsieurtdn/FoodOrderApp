@@ -16,7 +16,7 @@ const Stack = createStackNavigator();
 
 export const OrderScreenStack = () => {
     return (
-        <Stack.Navigator initialRouteName={Screen.OrderScreen.FoodAppScreen}>
+        <Stack.Navigator initialRouteName={Screen.OrderScreen.WelcomeScreen}>
             <Stack.Screen
                 name={Screen.OrderScreen.FoodAppScreen}
                 component={FoodAppScreen}

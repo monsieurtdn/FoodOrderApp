@@ -26,7 +26,7 @@ export const WelcomeScreen: React.FC<INavigation> = props => {
     const [access, setAccess] = useState<boolean>(false);
     useEffect(() => {
         if (access === true) {
-            navigation.navigate(Screen.OrderScreen.MenuScreen);
+            navigation.navigate(Screen.OrderScreen.FoodAppScreen);
         }
     });
     const [index, setIndex] = React.useState<number>(0);
@@ -56,7 +56,7 @@ export const WelcomeScreen: React.FC<INavigation> = props => {
                 />
             </View>
             <View>
-                <View style={{ marginTop: -325 }}>
+                <View style={{ marginTop: -400 }}>
                     <View
                         style={{
                             display: 'flex',
@@ -108,7 +108,7 @@ export const WelcomeScreen: React.FC<INavigation> = props => {
                 </View>
                 <View>
                     <View
-                        style={{ position: 'absolute', top: 370, left: '45%' }}>
+                        style={{ position: 'absolute', top: 525, left: '45%' }}>
                         <AnimatedDotsCarousel
                             length={imageData.length}
                             currentIndex={index}
@@ -158,7 +158,7 @@ export const WelcomeScreen: React.FC<INavigation> = props => {
                             borderRadius: 6,
                             width: 342,
                             position: 'absolute',
-                            top: 385,
+                            top: 550,
                             left: -25,
                             height: 48,
                         }}

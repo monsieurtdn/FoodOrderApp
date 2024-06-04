@@ -185,7 +185,7 @@ export const HomeTab: React.FC = () => {
                             paddingVertical: 10,
                             backgroundColor: '#6DBFEE',
                             borderRadius: 20,
-                            width: 320,
+                            width: 375,
                         }}
                         onPress={navigateToOrder}>
                         <Text style={{ color: 'white', fontSize: 16 }}>

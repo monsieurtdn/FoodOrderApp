@@ -141,7 +141,7 @@ const ProductOrderList: React.FC<any> = () => {
                             fontSize: 12,
                             fontStyle: 'italic',
                             marginTop: 5,
-                            marginRight: 125,
+                            marginRight: 170,
                         }}>
                         Sort your dishes by priority
                     </Text>

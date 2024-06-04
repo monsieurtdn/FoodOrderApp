@@ -100,7 +100,7 @@ export const SearchBar = () => {
                 marginLeft: 10,
                 padding: 8,
                 borderRadius: 25,
-                width: 341,
+                width: 390,
                 height: 36,
             }}>
             <View style={{ marginLeft: 4 }}>

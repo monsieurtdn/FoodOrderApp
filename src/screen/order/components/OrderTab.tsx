@@ -59,7 +59,7 @@ export const OrderTab: React.FC = () => {
                             gap: 10,
                             borderRadius: 100,
                             marginLeft: 10,
-                            width: 336,
+                            width: 380,
                             height: 39,
                         }}
                         activeOpacity={0.7}

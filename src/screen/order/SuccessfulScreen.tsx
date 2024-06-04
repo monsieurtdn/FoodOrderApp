@@ -40,14 +40,14 @@ export const SuccessfulScreen: React.FC<{
                 <TouchableOpacity
                     style={{
                         justifyContent: 'center',
-                        alignItems: 'center',
+                        alignSelf: 'center',
                         backgroundColor: '#005BA5',
                         gap: 10,
                         borderRadius: 100,
                         marginLeft: 10,
                         width: 335,
                         height: 40,
-                        top: 500,
+                        top: 650,
                     }}
                     activeOpacity={0.7}
                     onPress={() => {

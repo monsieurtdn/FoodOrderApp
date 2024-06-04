@@ -66,7 +66,7 @@ const BottomSheetContent: React.FC<BottomSheetContentProps> = ({ onClose }) => {
                     source={chosenItem.data.orderImg}
                     style={{
                         height: 207,
-                        width: 340,
+                        width: 390,
                         marginHorizontal: 10,
                         borderRadius: 10,
                     }}
@@ -186,7 +186,7 @@ const BottomSheetContent: React.FC<BottomSheetContentProps> = ({ onClose }) => {
                         backgroundColor: '#005BA5',
                         gap: 10,
                         borderRadius: 20,
-                        marginHorizontal: 5,
+                        marginHorizontal: 25,
                         height: 40,
                         width: 351,
                     }}
@@ -214,7 +214,7 @@ const styles = StyleSheet.create({
         padding: 10,
         marginTop: 10,
         marginBottom: 10,
-        width: 340,
+        width: 390,
         height: 52,
     },
     characterCount: {

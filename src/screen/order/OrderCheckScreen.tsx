@@ -43,7 +43,7 @@ export const OrderCheckScreen: React.FC = () => {
                         style={{
                             fontWeight: 'bold',
                             fontSize: 18,
-                            marginRight: 200,
+                            marginRight: 250,
                         }}>
                         Your Selection
                     </Text>
@@ -60,6 +60,7 @@ export const OrderCheckScreen: React.FC = () => {
                         flexDirection: 'row',
                         paddingVertical: 10,
                         paddingLeft: 10,
+                        width: 390,
                     }}>
                     <View>
                         <Text style={{ fontSize: 16 }}>
@@ -76,7 +77,7 @@ export const OrderCheckScreen: React.FC = () => {
                             backgroundColor: '#1890FF',
                             gap: 10,
                             borderRadius: 100,
-                            marginLeft: 30,
+                            marginLeft: 90,
                             paddingHorizontal: 25,
                             height: 39,
                         }}
@@ -101,7 +102,7 @@ export const OrderCheckScreen: React.FC = () => {
                         flexDirection: 'row',
                         paddingBottom: 10,
                         paddingTop: 10,
-                        right: -150,
+                        right: -225,
                     }}>
                     <Text style={{ fontWeight: 'bold' }}>Total: </Text>
                     <Text style={{ fontStyle: 'italic', marginLeft: 50 }}>
@@ -116,7 +117,7 @@ export const OrderCheckScreen: React.FC = () => {
                         gap: 10,
                         marginLeft: 10,
                         borderRadius: 100,
-                        width: 342,
+                        width: 390,
                         height: 39,
                     }}
                     activeOpacity={0.7}
