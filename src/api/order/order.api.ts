@@ -57,4 +57,43 @@ export default class OrderServiceApi {
             ),
         );
     }
+    static createOrder(order: any): Observable<any> {
+        const api = 'http://localhost/restaurant/api/create_order.php';
+        return HttpClient.post(api, order, {
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        }).pipe(
+            map(
+                res => (res as any) || null,
+                catchError((e: AjaxError) => throwError(e)),
+            ),
+        );
+    }
+    static updateOrder(order: any): Observable<any> {
+        const api = 'http://localhost/restaurant/api/update_order.php';
+        return HttpClient.post(api, order, {
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        }).pipe(
+            map(
+                res => (res as any) || null,
+                catchError((e: AjaxError) => throwError(e)),
+            ),
+        );
+    }
+    static getExcel(id: number): Observable<any> {
+        const api = `http://localhost/restaurant/api/generate_bill.php?orderID=${id}`;
+        return HttpClient.get(api, {
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        }).pipe(
+            map(
+                res => (res as any) || null,
+                catchError((e: AjaxError) => throwError(e)),
+            ),
+        );
+    }
 }
